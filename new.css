@@ -31,14 +31,14 @@ body {
 .manga-cover {
     grid-area: manga-cover;
     text-align: center;
-    
 }
-
+h2{
+    text-align: center;
+}
 .manga-cover img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    
 }
 
 .manga-categories, .manga-chapters, .manga-summary {
@@ -58,3 +58,53 @@ body {
 .manga-summary {
     grid-area: manga-summary;
 }
+
+/* Estilos para os capítulos */
+.chapters-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os capítulos */
+    gap: 10px;
+}
+
+.chapters-list a {
+    display: block;
+    width: calc(50% - 10px);
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.chapters-list a:hover {
+    background-color: #ececec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .manga-page {
+        grid-template-areas: 
+            "manga-header"
+            "manga-cover"
+            "manga-categories"
+            "manga-chapters"
+            "manga-summary";
+        grid-template-columns: 1fr;
+    }
+
+    .manga-cover img {
+        margin: 0 auto;
+    }
+
+    .chapters-list a {
+        width: 100%;
+    }
+}
+
+/* Media Query for Tablets */
+
