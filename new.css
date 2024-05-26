@@ -15,7 +15,7 @@ body {
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     max-width: 1200px;
-    background-color: rgb(131, 64, 64);
+    background-color: #353535;
     padding: 20px;
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,6 +35,17 @@ body {
 h2{
     text-align: center;
 }
+h1{
+    color: #ddd;
+}
+.text{
+    color: #999;
+}
+.title{
+    color: #ddd;
+    margin: 0px;
+    padding: 0px;
+}
 .manga-cover img {
     max-width: 100%;
     height: auto;
@@ -42,7 +53,7 @@ h2{
 }
 
 .manga-categories, .manga-chapters, .manga-summary {
-    background-color: #f9f9f9;
+    background-color: #1d1d1d;
     padding: 20px;
     border-radius: 5px;
 }
@@ -69,19 +80,20 @@ h2{
 
 .chapters-list a {
     display: block;
-    width: calc(50% - 10px);
+    width: 50%;
     text-align: center;
     padding: 15px;
-    background-color: #fff;
-    color: #333;
+    color: #fff; /* Fonte branca */
+    background-color: #1d1d1d; /* Fundo preto */
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 5px;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
 .chapters-list a:hover {
-    background-color: #ececec;
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Fonte preta */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
