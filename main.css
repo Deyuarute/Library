@@ -47,7 +47,6 @@ body{
   }
 
   
-  /* Estilos para dispositivos menores */
   @media (max-width: 768px) {
     .introducao {
       grid-template-columns: 1fr;

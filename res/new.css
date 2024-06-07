@@ -70,17 +70,17 @@ h1{
     grid-area: manga-summary;
 }
 
-/* Estilos para os capítulos */
+/* Capítulos Aba(1, 2, 3 ... */
 .chapters-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza os capítulos */
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center; 
     gap: 10px;
 }
 
 .chapters-list a {
     display: block;
-    width: 50%;
+    margin-bottom: 7px;
     text-align: center;
     padding: 15px;
     color: #fff; /* Fonte branca */
@@ -97,7 +97,6 @@ h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .manga-page {
         grid-template-areas: 
@@ -112,11 +111,7 @@ h1{
     .manga-cover img {
         margin: 0 auto;
     }
-
     .chapters-list a {
         width: 100%;
     }
 }
-
-/* Media Query for Tablets */
-
