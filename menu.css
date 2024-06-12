@@ -61,3 +61,7 @@ li a {
   font-family: 'Merriweather';
   src: url('fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
   }
+@font-face{
+  font-family: 'Espressonal';
+  src: url('fonts/espressonal/Espressonal.otf') format('opentype');
+}
