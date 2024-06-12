@@ -23,7 +23,7 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 0px;
     position: relative;
-    overflow: hidden; /* Para garantir que o conteúdo não ultrapasse a área da introdução */
+    overflow: hidden; 
   }
   
   .introducao::before {
@@ -36,10 +36,12 @@ body{
     background-image: url('img/back_pnp.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(5px); /* Aplica o desfoque à imagem de fundo */
-    z-index: -1; /* Para colocar a imagem de fundo atrás do conteúdo */
+    filter: blur(5px); 
+    z-index: -2;
+  } 
+    img.back{
+    filter: brightness(50%);
   }
-  
   .esquerda,
   .direita {
     padding: 20px;
